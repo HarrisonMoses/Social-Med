@@ -1,7 +1,11 @@
+import { Fragment } from 'react';
 import teamdata from '../Data/TeamsData'
+import Nav from '../components/Nav'
 
 const Team = () => {
   return (
+    <Fragment>
+      <Nav/>
     <section className="bg-white dark:bg-gray-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
         <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
@@ -114,6 +118,7 @@ const Team = () => {
         </div>
       </div>
     </section>
+    </Fragment>
   );
 }
 

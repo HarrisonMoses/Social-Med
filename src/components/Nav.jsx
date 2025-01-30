@@ -1,12 +1,13 @@
-import {useState} from 'react'
-import{Link} from 'react-router-dom';
-import { FaBars } from "react-icons/fa";
+import React from 'react'
+import { Link } from 'react-router-dom';
+import { FaBars } from 'react-icons/fa';
+import { useState } from 'react';
+import Navlinks from '../Data/NavLinks';
 
-const HomePage = () => {
-    const [isMenuOpen,setisMenuOpen] =useState(false);
-
+function Nav() {
+    const [isMenuOpen, setisMenuOpen] = useState(false);
   return (
-    <div className="">
+    <div>
       <header className="flex justify-between items-center text-black py-6 px-8 md:px-32 bg-gray-50 drop-shadow-md">
         <div className="flex">
           <div className="size-6 rounded-xl  bg-green-400 -mr-2"></div>
@@ -14,21 +15,16 @@ const HomePage = () => {
           <div className="font-bold">BSE-GRP-28</div>
         </div>
         <ul className="hidden xl:flex items-center gap-12 font-semibold text-base">
-          <li className="p-3 hover:bg-green-400 hover:text-white rounded-md transition-all duration-200 cursor-pointer">
-            Home
-          </li>
-          <li className="p-3 hover:bg-green-400 hover:text-white rounded-md transition-all duration-200 cursor-pointer">
-            About
-          </li>
-          <li className="p-3 hover:bg-green-400 hover:text-white rounded-md transition-all duration-200 cursor-pointer">
-            <Link to="team">Team & Roles</Link>
-          </li>
-          <li className="p-3 hover:bg-green-400 hover:text-white rounded-md transition-all duration-200 cursor-pointer">
-            Artifacts
-          </li>
-          <li className="p-3 hover:bg-green-400 hover:text-white rounded-md transition-all duration-200 cursor-pointer">
-            contact
-          </li>
+          {
+            Navlinks.map((link, index) => {
+              return (
+                <li key={index} className="p-3 hover:bg-green-400 hover:text-white rounded-md transition-all duration-200 cursor-pointer">
+                  <Link to={link.path}>{link.name}</Link>
+                </li>
+              )
+            })
+          }
+           
         </ul>
         <FaBars
           size={20}
@@ -50,4 +46,4 @@ const HomePage = () => {
   );
 }
 
-export default HomePage
+export default Nav

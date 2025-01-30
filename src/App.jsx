@@ -1,16 +1,12 @@
-import './App.css'
-import HomePage from './components/HomePage'
-
-import Notfound from './components/Notfound'
-import Team from './components/Team'
+import "./App.css";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <>
-   <HomePage/>
-   <Team/>
+     <HomePage />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
