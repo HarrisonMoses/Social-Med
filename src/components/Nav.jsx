@@ -7,8 +7,8 @@ import Navlinks from '../Data/NavLinks';
 function Nav() {
     const [isMenuOpen, setisMenuOpen] = useState(false);
   return (
-    <div>
-      <header className="flex justify-between items-center text-black py-6 px-8 md:px-32 bg-gray-50 drop-shadow-md">
+    <div className="z-50">
+      <header className="flex justify-between items-center text-black py-6 px-4 md:px-32 bg-gray-50 drop-shadow-md">
         <div className="flex">
           <div className="size-6 rounded-xl  bg-green-400 -mr-2"></div>
           <div className="size-6 rounded-xl  bg-red-500 mr-2"></div>

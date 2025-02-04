@@ -6,7 +6,81 @@ const About = () => {
     <div>
       <Nav />
       <div>
-        <div className="bg-[url('./soil.jpeg')] bg-cover"></div>
+        <div className="p-2 justify-items-center md:flex md:flex-row">
+          <div className="md:w-1/3 justify-items-center m-auto">
+            <h1 className="font-bold gradient_bg  w-max">Project Background</h1>
+          </div>
+          <div className="md:w-2/3">
+            <p className="text-justify p-2 tracking-wider">
+              The project is about monitoring soil health and advising farmers
+              on how to improve their soil health. The project is aimed at
+              helping farmers to improve their soil health and increase their
+              crop yield.
+            </p>
+          </div>
+        </div>
+        <hr className="border-t-2 border-dashed" />
+      </div>
+      <div>
+        <div className="p-2 justify-items-center md:flex  md:flex-row">
+          <div className="md:w-1/3 justify-items-center m-auto">
+            <h1 className="font-bold gradient_bg  w-max">Main Objectives</h1>
+          </div>
+          <div className="md:w-2/3 ">
+            <ul className="space-y-3 p-2 ">
+              <li className="justify-items-start">
+                <span className="size-2 bg-blue-400 rounded-full inline-block mr-2"></span>
+                <span className="font-mono font-bold">
+                  Monitor Soil Conditions
+                </span>{" "}
+                &rarr;
+                <div>
+                  Collect real-time data on moisture, temperature, and nutrient
+                  levels (NPK) using sensors.
+                </div>
+              </li>
+              <li className="justify-items-start">
+                <span className="size-2 bg-blue-400 rounded-full inline-block mr-2"></span>
+                <span className="font-mono font-bold">
+                  CLoud Based Analysis
+                </span>{" "}
+                &rarr;
+                <div>
+                  Send captured data to the cloud for processing and storage.
+                </div>
+              </li >
+              <li className="justify-items-start">
+                <span className="size-2 bg-blue-400 rounded-full inline-block mr-2"></span>
+                <span className="font-mono font-bold">
+                  Provide Insights and Recommendations
+                </span>
+                &rarr;
+                <div className="justify-items-start">
+                  Analyze soil data to suggest suitable crops and farming
+                  practices based on conditions.
+                </div>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+        <hr className="border-t-2 border-dashed" />
+      </div>
+      <div>
+        <div className="pt-2 justify-items-center md:flex md:flex-row">
+          <div className="md:w-1/3 justify-items-center m-auto">
+            <h1 className="font-bold gradient_bg  w-max">Project Background</h1>
+          </div>
+          <div className="md:w-2/3">
+            <p className="text-justify p-2 tracking-wider">
+              The project is about monitoring soil health and advising farmers
+              on how to improve their soil health. The project is aimed at
+              helping farmers to improve their soil health and increase their
+              crop yield.
+            </p>
+          </div>
+        </div>
+        <hr className="border-t-2 border-dashed" />
       </div>
     </div>
   );
