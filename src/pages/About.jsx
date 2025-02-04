@@ -1,15 +1,15 @@
-import React from 'react'
-import Nav from '../components/Nav'
+import React from "react";
+import Nav from "../components/Nav";
 
 const About = () => {
   return (
     <div>
-      <Nav/>
-      <h2>about page</h2>
+      <Nav />
+      <div>
+        <div className="bg-[url('./soil.jpeg')] bg-cover"></div>
+      </div>
     </div>
+  );
+};
 
-    
-  )
-}
-
-export default About
+export default About;
