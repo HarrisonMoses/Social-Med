@@ -7,6 +7,7 @@ import Notfound from "./pages/Notfound.jsx";
 import About from "./pages/About.jsx";
 import Artifacts from "./pages/Artifacts.jsx";
 import Team from "./pages/Team.jsx";
+import Team2 from "./pages/Team2.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,12 +26,12 @@ const router = createBrowserRouter([
   },
   {
     path:'team',
-    element:<Team/>
+    element:<Team2/>
   }
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
+  // <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>
+  // {/* </StrictMode> */}
 );

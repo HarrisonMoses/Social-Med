@@ -5,7 +5,9 @@ import Nav from '../components/Nav'
 const Team = () => {
   return (
     <Fragment>
-      <Nav />
+      <div className=" sticky top-0 z-50">
+        <Nav />
+      </div>
       <section className="bg-white dark:bg-gray-900">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
           <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
@@ -19,7 +21,10 @@ const Team = () => {
           </div>
           <div className=" w-30 grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
             {teamdata?.map((team) => (
-              <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+              <div
+                key={team.name}
+                className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700"
+              >
                 <a href="#">
                   <img
                     className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
@@ -130,7 +135,9 @@ const Team = () => {
                       <div className="mt-2 flex justify-between">
                         <div className="flex items-center">
                           <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                          <p className="font-semibold text-gray-900">{task.feature}</p>
+                          <p className="font-semibold text-gray-900">
+                            {task.feature}
+                          </p>
                         </div>
                         <h2 href="#" className="text-medium text-gray-500">
                           {task.description}

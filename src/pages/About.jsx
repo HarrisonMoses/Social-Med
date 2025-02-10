@@ -4,7 +4,9 @@ import Nav from "../components/Nav";
 const About = () => {
   return (
     <div>
-      <Nav />
+      <div className=" sticky top-0 z-50">
+        <Nav />
+      </div>
       <div>
         <div className="p-2 justify-items-center md:flex md:flex-row">
           <div className="md:w-1/3 justify-items-center m-auto">
@@ -74,9 +76,7 @@ const About = () => {
             <ul className="space-y-3 p-2 ustify-items-start ">
               <li className="text-left">
                 <span className="size-2 bg-blue-400 rounded-full inline-block mr-2"></span>
-                <span className="">
-                  Helping Farmers optimise crop growth.
-                </span>{" "}
+                <span className="">Helping Farmers optimise crop growth.</span>{" "}
               </li>
               <li className="text-left">
                 <span className="size-2 bg-blue-400 rounded-full inline-block mr-2"></span>

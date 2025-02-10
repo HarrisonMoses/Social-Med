@@ -1,20 +1,24 @@
-import React from "react";
-import { BiCloudDownload } from "react-icons/bi";
 
-function DownloadButton({ url, downloadname }) {
+function PdfBlock({ url, downloadname}) {
   return (
-    <a
-      className="p-3 bg-green-400 hover:text-white rounded-md transition-all duration-200 cursor-pointer "
-      href={url}
-      target="_blank"
-      alt={downloadname}
-      rel="noreferrer"
-      // download={downloadname}
-    >
-      {/* <BsCloudDownload/> */}
-      Download 
-    </a>
+    <div className="bg-white shadow-md rounded-lg p-2 m-6">
+      <h3 className="text-xl font-semibold text-start text-gray-900 mb-2">
+        {downloadname}
+      </h3>
+      <embed
+        src={url}
+        type="application/pdf"
+        className="w-full h-56 rounded-md"
+      />
+      <a
+        href={url}
+        target="_blank"
+        className="block mt-3 text-orange-500 font-semibold hover:underline"
+      >
+        View Full PDF
+      </a>
+    </div>
   );
 }
 
-export default DownloadButton;
+export default PdfBlock;
