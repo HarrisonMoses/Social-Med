@@ -2,7 +2,7 @@ import React from 'react'
 import Nav from '../components/Nav'
 import srs from '../artifacts/SSRS.pdf'
 import report  from '../artifacts/PROJECT REPORT.pdf'
-import PdfBlock from '../components/downloadButton'
+import PdfBlock from '../components/DownloadButton'
 
 export default function Artifacts() {
   return (
