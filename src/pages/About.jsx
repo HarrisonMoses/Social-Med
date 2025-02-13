@@ -1,7 +1,9 @@
 import React from "react";
 import Nav from "../components/Nav";
+import Data from "../Data/About";
 
 const About = () => {
+
   return (
     <div>
       <div className=" sticky top-0 z-50">
@@ -14,10 +16,16 @@ const About = () => {
           </div>
           <div className="md:w-2/3">
             <p className="text-justify p-2">
-              The project is about monitoring soil health and advising farmers
-              on how to improve their soil health. The project is aimed at
-              helping farmers to improve their soil health and increase their
-              crop yield.
+              Smallholder farmers in Uganda face significant challenges in
+              optimizing crop yields due to limited access to real-time soil
+              data. Without precise information on soil nutrient levels,
+              moisture, and temperature, they often rely on guesswork for
+              fertilizer application, irrigation, and crop selection. This leads
+              to inefficient use of resources, poor agricultural productivity,
+              and soil degradation. There is a critical need for a system that
+              collects, analyzes, and interprets soil data to provide actionable
+              insights and recommendations for sustainable and efficient farming
+              practices."
             </p>
           </div>
         </div>

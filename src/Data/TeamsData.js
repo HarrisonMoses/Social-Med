@@ -1,9 +1,11 @@
+//  import moses from '../assets/moses.jpeg';
+ 
  const teamdata = [
    {
      name: "Mugoya Moses",
      Reg: "21/U/10447/PS",
      image:
-       "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png",
+       '/moses.jpeg',
      description:
        "Moses specializes in full-stack development and has extensive experience in creating responsive web applications.",
      tasks: [

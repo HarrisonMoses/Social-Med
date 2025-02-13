@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Nav from "../components/Nav";
-import leaf from "../assets/leaf.jpg";
+// import leaf from "../assets/leaf.jpg";
 import team from "../Data/TeamsData";
 
 
@@ -56,10 +56,10 @@ function Team2() {
         </button>
       </div>
 
-      <div className="mt-4 md:flex md:flex-row h-max justify-items-center">
+      <div className="mt-4 ml-4 md:flex md:flex-row h-max justify-items-center">
         <div className="">
           <div className="w-40 h-40 rounded-full overflow-hidden">
-            <img className="w-40 h-40 " src={leaf} alt=" profile" />
+            <img className="w-40 h-40 " src={Member.image} alt=" profile" />
           </div>
         </div>
         <div className="w-80 h-40 md:text-left  md:ml-16 mt-2 ">
@@ -71,8 +71,8 @@ function Team2() {
         </div>
       </div>
       {Member.tasks.map((task, index) => (
-        <div key={index} className="mt-4">
-          <div className="p-2 mt-2">
+        <div key={index} className="mt-4 ml-4 ">
+          <div className="p-2 ">
             <h2 className="text-left font-bold text-xl">{task.title}</h2>
             <p className="text-justify">{task.description}</p>
           </div>
