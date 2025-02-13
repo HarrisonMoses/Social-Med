@@ -12,7 +12,7 @@ function Nav() {
         <div className="flex">
           <div className="size-6 rounded-xl  bg-green-400 -mr-2"></div>
           <div className="size-6 rounded-xl  bg-red-500 mr-2"></div>
-          <div className="font-bold">BSE-GRP-28</div>
+          <div className="font-bold">BSE25-GRP-28</div>
         </div>
         <ul className="hidden xl:flex items-center gap-12 font-semibold text-base">
           {Navlinks.map((link, index) => {
