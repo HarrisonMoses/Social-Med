@@ -14,8 +14,7 @@ export default function Artifacts() {
         <h2 className="text-4xl w-max p-2 m-auto font-bold text-center text-gray-900 mb-12 gradient_bg">Project Documents</h2>
         <div className="grid md:grid-cols-3 gap-12">
             <PdfBlock url={srs} downloadname="SRS"/>
-            <PdfBlock url={report} downloadname="Final report" />
-            {/* <PdfBlock url={srs} downloadname="SDD" /> */}
+            <PdfBlock url={report} downloadname="Final report" />    
         </div>
     </div>
     </div>
