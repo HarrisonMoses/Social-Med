@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,4 +6,7 @@
 
 .gradient_bg{
     @apply bg-gradient-to-r from-green-500 via-amber-400 to-red-600 text-transparent bg-clip-text;
+}
+.bg_image{
+  @apply bg-[url("./assets/soil.jpeg")] ;
 }
