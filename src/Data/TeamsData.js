@@ -1,4 +1,4 @@
-//  import moses from '../assets/moses.jpeg';
+  import heli from '../assets/Heli.jpg';
  
  const teamdata = [
    {
@@ -45,7 +45,7 @@
      name: "Heli Prajapati",
      Reg: "21/X/20194/PS",
      image:
-       "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png",
+       `${heli}`,
      description:
        "Heli has a strong foundation in web development and can help you build a successful and user-friendly website.",
      tasks: [
