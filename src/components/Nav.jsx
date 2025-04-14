@@ -1,11 +1,11 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import { FaBars } from 'react-icons/fa';
-import { useState } from 'react';
-import Navlinks from '../Data/NavLinks';
+"use client"
+import { Link } from "react-router-dom"
+import { FaBars } from "react-icons/fa"
+import { useState } from "react"
+import Navlinks from "../Data/NavLinks"
 
 function Nav() {
-    const [isMenuOpen, setisMenuOpen] = useState(false);
+  const [isMenuOpen, setisMenuOpen] = useState(false)
   return (
     <div className="">
       <header className="flex justify-between items-center text-black py-6 px-4 md:px-32 bg-gray-50 drop-shadow-md">
@@ -23,7 +23,7 @@ function Nav() {
               >
                 <Link to={link.path}>{link.name}</Link>
               </li>
-            );
+            )
           })}
         </ul>
         <FaBars
@@ -46,11 +46,11 @@ function Nav() {
             >
               <Link to={link.path}>{link.name}</Link>
             </li>
-          );
+          )
         })}
       </div>
     </div>
-  );
+  )
 }
 
 export default Nav
