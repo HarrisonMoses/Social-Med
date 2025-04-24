@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className="bg-white shadow-sm py-4 px-6">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
-        <h1 className="text-center text-xl font-medium">
+        <h1 className=" hidden md:block text-center text-xl font-medium">
           Smart Cloud-Based Soil Advisor
         </h1>
         <nav>
