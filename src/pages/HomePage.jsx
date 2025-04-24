@@ -6,7 +6,7 @@ const HomePage = () => {
       <Header />
 
       <div
-        className="relative h-[500px] bg-cover bg-center"
+        className="relative h-[800px] bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-04-14%20143635-foHhzSZNAPC5oWDgYOlUAleBBOt2Ie.png')",
