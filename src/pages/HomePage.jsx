@@ -1,20 +1,25 @@
-import Nav from "../components/Nav";
+import Header from "../components/Header";
 
 const HomePage = () => {
   return (
-    <div className="">
-      <div className=" sticky top-0 z-50">
+    <div className="min-h-screen bg-green-50">
+      <Header />
 
-      <Nav />
-      </div>
-      <div className="bg_image bg-cover h-screen rounded-b-sm over-flow relative"> 
-        <div className="backdrop-blur-xl bg-black bg-opacity-10 h-full flex flex-col justify-center items-center "> 
-          <h1 className="text-5xl text-white font-sans text-center pt-24 pr-2">
-            Welcome to BSE25-GRP-28
+      <div
+        className="relative h-[500px] bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-04-14%20143635-foHhzSZNAPC5oWDgYOlUAleBBOt2Ie.png')",
+        }}
+      >
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-40">
+          <h1 className="text-4xl font-bold mb-4 text-center">
+            Welcome to Smart Cloud-Based Soil Advisor
           </h1>
-          <h1 className="text-5xl text-white font-bold text-center pt-4 p-2">
-            Soil Monitoring and Advisor
-          </h1>
+          <p className="text-xl text-center max-w-2xl">
+            Empowering farmers with intelligent soil analysis and
+            recommendations for optimal crop yields
+          </p>
         </div>
       </div>
     </div>

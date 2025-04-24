@@ -1,4 +1,3 @@
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
@@ -7,7 +6,10 @@ import Notfound from "./pages/Notfound.jsx";
 import About from "./pages/About.jsx";
 import Artifacts from "./pages/Artifacts.jsx";
 import Team from "./pages/Team.jsx";
-import Team2 from "./pages/Team2.jsx";
+import Blog from "./pages/Blog.jsx";
+
+// Add Flowbite script
+import "flowbite";
 
 const router = createBrowserRouter([
   {
@@ -25,13 +27,15 @@ const router = createBrowserRouter([
     element: <Artifacts />,
   },
   {
-    path:'team',
-    element:<Team2/>
-  }
+    path: "team",
+    element: <Team />,
+  },
+  {
+    path: "blog",
+    element: <Blog />,
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
-  // <StrictMode>
-    <RouterProvider router={router} />
-  // {/* </StrictMode> */}
+  <RouterProvider router={router} />
 );
