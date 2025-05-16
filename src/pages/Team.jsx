@@ -7,7 +7,7 @@ const Team = () => {
       name: "Dr. Swaib Kyanda Kaawaase",
       role: "Head of Department – Networks",
       description:
-        "Project supervisor with deep expertise in computer networks, academic mentorship, and research in emerging technologies.",
+        "Project supervisor with deep expertise in wireless networks and academic mentorship.",
       image: "/drswaib.jpeg",
     },
     {
