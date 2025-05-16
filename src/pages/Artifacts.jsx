@@ -1,6 +1,9 @@
 import Header from "../components/Header";
 import ProjectReport from "../artifacts/PROJECT REPORT.pdf";
 import SSRS from "../artifacts/SSRS.pdf";
+import FinalImplementationReport from "../artifacts/FinalImplementationReport.pdf";
+import SoftwareDesignDocument from "../artifacts/SoftwareDesignDocument.pdf";
+import UserManual from "../artifacts/UserManual.pdf";
 
 const Artifacts = () => {
   const documents = [
@@ -11,6 +14,18 @@ const Artifacts = () => {
     {
       title: "Final Project Report",
       url: ProjectReport,
+    },
+    {
+      title: "Final Implementation Report",
+      url: FinalImplementationReport,
+    },
+    {
+      title: "Software Design Document",
+      url: SoftwareDesignDocument,
+    },
+    {
+      title: "User Manual",
+      url: UserManual,
     },
   ];
 
