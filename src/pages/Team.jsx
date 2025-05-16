@@ -3,6 +3,14 @@ import Header from "../components/Header";
 const Team = () => {
   const teamMembers = [
     {
+      initials: "SK",
+      name: "Dr. Swaib Kyanda Kaawaase",
+      role: "Head of Department – Networks",
+      description:
+        "Project supervisor with deep expertise in computer networks, academic mentorship, and research in emerging technologies.",
+      image: "/drswaib.jpeg",
+    },
+    {
       initials: "HP",
       name: "Heli Prajapati",
       role: "AI and machine learning",
@@ -26,17 +34,7 @@ const Team = () => {
       role: "Backend Developer",
       description:
         "Proficient in embedded systems, back-end technologies and ensuring robust server-side logic.",
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/placeholder-ob7miW3mUreePYfXdVwkpFWHthzoR5.svg?height=200&width=200",
-    },
-    {
-      initials: "MN",
-      name: "Mpagi Nelly",
-      role: "UX Designer",
-      description:
-        "Excels in user experience design, making sure websites are both beautiful and functional.",
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/placeholder-ob7miW3mUreePYfXdVwkpFWHthzoR5.svg?height=200&width=200",
+      image: "/elioda.jpg",
     },
   ];
 
@@ -57,7 +55,7 @@ const Team = () => {
                 <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                   {member.image ? (
                     <img
-                      src={member.image || "/placeholder.svg"}
+                      src={member.image}
                       alt={`${member.name} profile`}
                       className="w-full h-full object-cover"
                     />
