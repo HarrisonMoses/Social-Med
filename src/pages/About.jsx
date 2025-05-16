@@ -10,8 +10,8 @@ const About = () => {
           <h2 className="text-2xl font-semibold mb-4">Project Background</h2>
           <p className="mb-6 text-gray-700">
             Smallholder farmers in Uganda face significant challenges in
-            optimizing crop yields due to limited access to real-time soil data.
-            Without precise information on soil nutrient levels, moisture, and
+            optimizing crop yields due to limited access to soil data. Without
+            precise information on soil nutrient levels, moisture, and
             temperature, they often rely on guesswork for fertilizer
             application, irrigation, and crop selection. This leads to
             inefficient use of resources, poor agricultural productivity, and
@@ -38,7 +38,7 @@ const About = () => {
               </div>
               <h3 className="font-medium mb-1">Limited Data Access</h3>
               <p className="text-sm text-gray-600">
-                Lack of access to real-time soil data affects decision-making
+                Lack of access to soil data affects decision-making
               </p>
             </div>
 
@@ -136,8 +136,8 @@ const About = () => {
               </div>
               <h3 className="font-medium mb-1">Monitor Soil Conditions</h3>
               <p className="text-sm text-gray-600">
-                Collect real-time data on moisture, temperature, and nutrient
-                levels (NPK) using sensor.
+                Collect data on moisture, temperature, and nutrient levels (NPK)
+                using sensor.
               </p>
             </div>
 
